@@ -15,6 +15,7 @@ int main(void) {
 		printf("O resultado da soma é %d\n", result);
 
 		cont = cont + 1;
+	}
 
 	for (cont = 1; cont <=3; cont++) {
 		printf("Entre com dois números para serem somados: ");
@@ -24,9 +25,19 @@ int main(void) {
 		result = x + y;
 
 		printf("O resultado da soma é:%d\n", result);
-		}
-	}
 
+		cont = 1;
+		do {
+			printf("Entre com dois números para serem somados");
+			fflush(stdout);
+			scanf("%d %d" , &x ,&y);
+
+			result = x + y;
+
+			printf(" O valeor da soma é %d\n", result);
+		}while (cont <= 3);
+
+	}
 		return 0;
+}
 
-	}
